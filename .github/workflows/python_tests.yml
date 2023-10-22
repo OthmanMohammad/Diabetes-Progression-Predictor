@@ -1,3 +1,7 @@
+name: Python Tests
+
+on: [push]
+
 jobs:
   test:
 
@@ -11,6 +15,7 @@ jobs:
       with:
         python-version: 3.9
 
+    # Add caching here
     - name: Cache pip dependencies
       uses: actions/cache@v2
       with:
