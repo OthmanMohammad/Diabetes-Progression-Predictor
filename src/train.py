@@ -52,6 +52,12 @@ def mlflow_logging(history, model, X_test, y_test):
     # Log model
     mlflow.keras.log_model(model, "model")
 
+def get_next_version(base_path):
+    versions = [d for d in os.listdir(base_path) if os.path.isdir(os.path.join(base_path, d)) and d.isdigit()]
+    versions = list(map(int, versions))
+    if not versions:
+        return 1
+    return max(versions) + 1
 
 def train_and_evaluate_model():
     mlflow.tensorflow.autolog()
@@ -64,7 +70,11 @@ def train_and_evaluate_model():
         history = model_instance.model.fit(X_train, y_train, epochs=epochs, validation_data=(X_test, y_test))
         mlflow_logging(history, model_instance.model, X_test, y_test)
         
-        model_save_path = f"served_models/my_model/{current_time}/"
+        # Get the next version for model saving
+        model_save_base_path = "served_models/my_model"
+        next_version = get_next_version(model_save_base_path)
+        model_save_path = os.path.join(model_save_base_path, str(next_version))
+
         if not os.path.exists(model_save_path):
             os.makedirs(model_save_path)
         

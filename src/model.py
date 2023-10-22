@@ -14,4 +14,5 @@ class DiabetesPredictor:
         return model
     
     def save_model(self, path):
-        self.model.save(path)
+        tf.saved_model.save(self.model, path) 
+

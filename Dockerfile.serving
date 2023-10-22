@@ -1,0 +1,10 @@
+FROM tensorflow/serving
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the trained model to the appropriate TensorFlow Serving model path
+COPY served_models/my_model /models/my_model
+
+# Set necessary environment variables for TensorFlow Serving
+ENV MODEL_NAME=my_model

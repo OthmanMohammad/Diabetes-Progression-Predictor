@@ -1,4 +1,4 @@
-name: Docker Image CI/CD
+name: Docker Image CI/CD for Training
 
 on: [push]
 
@@ -10,11 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag mohammad3500/diabetes-prediction
+    - name: Build the Docker image for Training
+      run: docker build . --file Dockerfile.train --tag mohammad3500/diabetes-prediction-train
 
     - name: Login to Docker Hub
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
-    - name: Push the Docker image
-      run: docker push mohammad3500/diabetes-prediction
+    - name: Push the Docker image for Training
+      run: docker push mohammad3500/diabetes-prediction-train

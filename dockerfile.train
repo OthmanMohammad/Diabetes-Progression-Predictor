@@ -11,8 +11,5 @@ RUN pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.tx
 # Copy the rest of the application
 COPY . .
 
-# Define environment variable
-# ENV NAME=Value
-
 # Run your script when the container launches
 CMD ["python", "src/train.py"]
