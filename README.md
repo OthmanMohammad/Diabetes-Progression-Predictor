@@ -15,7 +15,7 @@ This repository exemplifies a robust ML workflow, leveraging MLflow for experime
 ## Overview
 The primary objective of this project is to demonstrate a modern MLOps pipeline by predicting diabetes progression using specific input features. This pipeline incorporates model training, tracking with MLflow, containerization via Docker, serving with TensorFlow Serving, and automating workflows with GitHub Actions.
 
-### Using MLflow for Model Tracking
+## Using MLflow for Model Tracking
 MLflow is integrated into the training pipeline to keep track of different model runs. It logs metrics, parameters, and the trained model artifacts. This ensures reproducibility and easy comparison between different runs.
 
 Steps to use MLflow:
@@ -26,10 +26,10 @@ Steps to use MLflow:
    mlflow ui
 3. Navigate to the MLflow dashboard by visiting http://127.0.0.1:5000.
 
-### Dockerization
+## Dockerization
 We utilize Docker for packaging our training and serving components.
 
-#### Training Dockerfile
+### Training Dockerfile
 This Dockerfile is set up to run the training script. It ensures that all dependencies are met and provides an isolated environment to run the training.
 
 To build the training image:
@@ -37,7 +37,7 @@ To build the training image:
 ```bash
 docker build . --file Dockerfile.train --tag [YOUR_TAG_NAME]
 ```
-## Serving Dockerfile
+### Serving Dockerfile
 
 This Dockerfile packages the TensorFlow Serving setup with our trained model. It facilitates serving the model for predictions.
 
