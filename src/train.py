@@ -1,3 +1,4 @@
+import os
 import json
 import mlflow
 import mlflow.keras
@@ -62,6 +63,14 @@ def train_and_evaluate_model():
     with mlflow.start_run():
         history = model_instance.model.fit(X_train, y_train, epochs=epochs, validation_data=(X_test, y_test))
         mlflow_logging(history, model_instance.model, X_test, y_test)
+        
+        model_save_path = f"served_models/my_model/{current_time}/"
+        if not os.path.exists(model_save_path):
+            os.makedirs(model_save_path)
+        
+        # Save the trained model for TensorFlow Serving
+        model_instance.save_model(model_save_path)
+
 
 if __name__ == "__main__":
     train_and_evaluate_model()

@@ -12,3 +12,6 @@ class DiabetesPredictor:
         ])
         model.compile(optimizer='adam', loss='mse', metrics=['mae'])
         return model
+    
+    def save_model(self, path):
+        self.model.save(path)
