@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ASUS/Desktop/DiabetesProgressionPredictor/mlruns/372725399641250758/6357766400e8460daa82844221f8292d/artifacts
+end_time: 1697961868599
+entry_point_name: ''
+experiment_id: '372725399641250758'
+lifecycle_stage: active
+run_id: 6357766400e8460daa82844221f8292d
+run_name: sassy-flea-131
+run_uuid: 6357766400e8460daa82844221f8292d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697961853903
+status: 3
+tags: []
+user_id: ASUS

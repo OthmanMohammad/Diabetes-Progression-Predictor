@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ASUS/Desktop/DiabetesProgressionPredictor/mlruns/655344368893445209/f4d958b5e0da400dba8204fa24f74d8d/artifacts
+end_time: 1697923069269
+entry_point_name: ''
+experiment_id: '655344368893445209'
+lifecycle_stage: active
+run_id: f4d958b5e0da400dba8204fa24f74d8d
+run_name: wise-squid-294
+run_uuid: f4d958b5e0da400dba8204fa24f74d8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697923055210
+status: 3
+tags: []
+user_id: ASUS

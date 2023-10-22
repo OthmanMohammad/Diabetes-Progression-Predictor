@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ASUS/Desktop/DiabetesProgressionPredictor/mlruns/739478207788020694/ce7308d88a854457b7d1142e0d2a8ace/artifacts
+end_time: 1697960239230
+entry_point_name: ''
+experiment_id: '739478207788020694'
+lifecycle_stage: active
+run_id: ce7308d88a854457b7d1142e0d2a8ace
+run_name: sneaky-moth-530
+run_uuid: ce7308d88a854457b7d1142e0d2a8ace
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697960222045
+status: 3
+tags: []
+user_id: ASUS

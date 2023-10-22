@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ASUS/Desktop/DiabetesProgressionPredictor/mlruns/603400724499424691/e9e50812339044379616c5de7ac2d362/artifacts
+end_time: 1697964358712
+entry_point_name: ''
+experiment_id: '603400724499424691'
+lifecycle_stage: active
+run_id: e9e50812339044379616c5de7ac2d362
+run_name: unruly-goat-634
+run_uuid: e9e50812339044379616c5de7ac2d362
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697964344440
+status: 3
+tags: []
+user_id: ASUS
