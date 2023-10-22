@@ -13,3 +13,5 @@ COPY . .
 
 # Run your script when the container launches
 CMD ["python", "src/train.py"]
+
+
